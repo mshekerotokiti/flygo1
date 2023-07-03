@@ -1,15 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
-import AirportList from "../components/AirportList";
+import Item from "../components/Item";
 
-
-function Airport(){
+function BookingItem(){
   return(
     <div>
       <Header />
-      <AirportList />
+      <Item />
     </div>
   );
 }
 
-export default Airport;
+export default BookingItem;

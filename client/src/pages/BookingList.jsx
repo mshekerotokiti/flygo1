@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "../components/Header";
-import AirportList from "../components/AirportList";
+import List from "../components/List";
 
 
-function Airport(){
+function BookingList(){
   return(
     <div>
       <Header />
-      <AirportList />
+      <List />
     </div>
   );
 }
 
-export default Airport;
+
+export default BookingList;
