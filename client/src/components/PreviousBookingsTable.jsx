@@ -1,6 +1,6 @@
 import React from 'react';
+import PreviousBookingsRow from './PreviousBookingsRow';
 import './PreviousBookingsTable.css';
-import PreviousBookingRow from './PreviousBookingRow';
 
 const PreviousBookingsTable = ({ bookings }) => {
   return (
@@ -18,7 +18,7 @@ const PreviousBookingsTable = ({ bookings }) => {
       </thead>
       <tbody>
         {bookings.map((booking, index) => 
-          <PreviousBookingRow key={index} {...booking} />
+          <PreviousBookingsRow key={index} {...booking} />
         )}
       </tbody>
     </table>

@@ -1,7 +1,7 @@
 import React from 'react';
-import './PreviousBookingRow.css';
+import './PreviousBookingsRow.css';
 
-const PreviousBookingRow = ({ date, from, to, price, departureTime, arrivalTime, airport }) => {
+const PreviousBookingsRow = ({ date, from, to, price, departureTime, arrivalTime, airport }) => {
   return (
     <tr className="booking-row">
       <td>{date}</td>
@@ -15,4 +15,4 @@ const PreviousBookingRow = ({ date, from, to, price, departureTime, arrivalTime,
   );
 };
 
-export default PreviousBookingRow;
+export default PreviousBookingsRow;
