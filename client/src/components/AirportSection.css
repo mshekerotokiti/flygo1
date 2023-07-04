@@ -1,0 +1,17 @@
+.airport-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  /* background-color: red; */
+}
+
+
+/* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+
+/* display: grid; */
