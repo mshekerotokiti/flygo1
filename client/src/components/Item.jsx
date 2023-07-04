@@ -1,32 +1,43 @@
-import React from "react";
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
-
 
 const BookingItem = () => {
   const [booking, setBooking] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    // Fetch booking details from the backend API
+    // Simulating fetching booking details from an API
     const fetchBooking = async () => {
       try {
-        const response = await fetch(`/api/bookings/${id}`);
-        const data = await response.json();
-        setBooking(data);
+        // Simulated API response
+        const response = await new Promise(resolve => {
+          setTimeout(() => {
+            resolve({
+              user: "John Doe",
+              flight: "Flight ABC123"
+            },
+            {
+              id: 2,
+              user: "Christine",
+              airport: "Airport XYZ"
+            });
+          }, 100); // Simulate delay
+        });
+        
+        setBooking(response);
       } catch (error) {
         console.log(error);
       }
     };
 
     fetchBooking();
-  }, [id]);
+  }, []);
 
   if (!booking) {
     return <div>Loading...</div>;
   }
   
-  return(
+  return (
     <div>
       <h1>This is the item section of the booking item page</h1>
       <h2>Booking Details</h2>
