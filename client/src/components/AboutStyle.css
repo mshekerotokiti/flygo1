@@ -20,20 +20,23 @@
   
   .content-container {
     flex: 3;
-    text-align: center;
+    text-align: left;
   }
   
   h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
   }
   
   p {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    margin-left: 50px;
   }
   
   .button-container {
     text-align: left;
+    margin-left: 50px;
   }
   
   .contact-button {
