@@ -1,0 +1,52 @@
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20%;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 20px;
+  }
+  
+  .content-container {
+    flex: 3;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    text-align: left;
+  }
+  
+  .contact-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  
