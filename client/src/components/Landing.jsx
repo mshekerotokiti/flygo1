@@ -1,13 +1,19 @@
 import React from "react";
 
-
-function Landing(){
-  return(
+const Landing = () => {
+  const imageStyle = {
+    width: "100%", 
+    height: "700px", 
+    backgroundImage: "../airplane.png", 
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+   
+  };
+  return (
     <div>
-      <h1>This is the landind section of the home page</h1>
+      <img src="../airplane.png" alt="Airplane" style ={imageStyle} />
     </div>
   );
-}
-
+};
 
 export default Landing;
