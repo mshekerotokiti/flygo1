@@ -10,7 +10,7 @@ function AirportSection({airportArray}){
                             {id: 4, image: "./AirportImages/Moi.jpg", rating: 4.8, name: "Moi International Airport"}]
 
   const airports = airportArrayTest.map((airport)=>{
-      return <AirportCard key={airport.id} image={airport.image} rating={airport.rating} name={airport.name} />
+      return <AirportCard key={airport.id} id={airport.id} image={airport.image} rating={airport.rating} name={airport.name} />
   });
 
   return(
